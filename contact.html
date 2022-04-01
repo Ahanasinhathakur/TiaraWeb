@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-white header-wrapper">
+    <div class="row pt-4 web-header">
+        <img src="assets/Tiara_logo_black.png" alt="" class="tiara-logo-img w-auto">
+        <div class="header-menu pt-4">
+            <a class="header-menu-name" href="homepage.html">Home</a>
+            <a class="header-menu-name" href="jewellery.html">Jwellery</a>
+            <div class="media-dropdown">
+                <a class="dropbtn header-menu-name d-flex align-items-center justify-content-center" href="media.html">media 
+                  <img src="assets/down-arrow.svg" alt="" class="dropdown-arrow">
+                </a>
+                <div class="media-dropdown-content">
+                  <a href="#" class="pb-3">news</a>
+                  <a href="#">press release</a>
+                </div>
+            </div>
+            <a class="header-menu-name" href="about.html">about</a>
+            <a class="header-menu-name active-tab">contact us</a>
+        </div>
+    </div>
+    <img src="assets/Tiara_logo_black.png" alt="" class="tiara-logo-img-mob w-auto">
+    <nav role="navigation" class="side-navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <!-- <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+            <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+          </ul> -->
+        </div>
+    </nav>
+</div>
+  
+<div class="pt-4 pb-4">
+    <div class="position-relative">
+        <img src="assets/contact-background.png" alt="" class="w-100 about-banner-img position-relative">
+        <img src="assets/about-back-shape.svg" alt="" class="w-100 about-banner-overlay about-banner-overlay-img position-absolute">
+        <div class="about-banner position-absolute">
+            <span alt="" class="home-heading">Home /</span>
+            <span class="about-heading">Contact us</span>
+        </div>
+    </div>
+</div>   
+
+<div class="container">
+    <div class="row">
+        <div>
+            <p class="contact-email-label">Email:</p>
+            <p class="contact-email">info@tiaragems.com</p>
+        </div>
+        <div>
+            <p class="contact-num-label">Phone Number:</p>
+            <p class="contact-number">1800 654 234</p>
+        </div>
+        <div class="col-sm-6 pt-3 send-query-block">
+            <h3 class="send-query-heading">Send your Query</h3>
+            <form action="/action_page.php">
+                <input type="name" id="name" name="name" placeholder="Full Name" class="name-input-query mb-4 w-100">
+                <input type="email" id="email" name="email" placeholder="Email" class="email-input-query mb-4 w-100">
+                <textarea rows="6" cols="50" name="comment" form="usrform" placeholder="Message" class="message-input-query mb-4 w-100">Message</textarea>
+                <button type="submit" class="subscribe-btn w-100">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-6 pt-3">
+            <h3 class="location-heading">Our Location</h3>
+            <img src="assets/map.png" alt="" class="w-100 map-img">
+            <p class="location-name">Tiaragems</p>
+            <p class="location-details">Shop 37, Ground Floor, Gate Avenue. DIFC, Dubai</p>
+        </div>
+    </div>
+</div>
+
+
+<hr class="divider">
+
+<div class="pt-4 pb-4">
+    <div class="row m-0 text-center">
+        <h4 class="insta-name">@Ashish_vijay</h4>
+        <h5 class="instagram-text">Instagram</h5>
+        <div class=" insta-jewel-images p-0 mt-4">
+            <img src="assets/insta-jewel1.png" alt="">
+            <img src="assets/insta-jewel2.png" alt="">
+            <img src="assets/insta-jewel3.png" alt="">
+            <img src="assets/insta-jewel4.png" alt="">
+            <img src="assets/insta-jewel5.png" alt="">
+        </div>
+    </div> 
+</div>
+
+<div class="container p-4">
+    <div class="row pt-4 text-center justify-content-center">
+        <h3 class="follow-heading">Follow Along</h3>
+        <p class="follow-along-subtext">Stay updated on the latest news and updates from Tiara by Ashish Vijay. 
+            Enter your email ID in the box below to subscribe to our newsletters!</p>
+        <form action="/action_page.php">
+            <input type="email" id="email" name="email" placeholder="Email" class="email-input mb-4">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <div class="social-media-links mt-4">
+            <img src="assets/facebook-icon.svg" alt="">
+            <img src="assets/pinterest.svg" alt="">
+            <img src="assets/insta-icon.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrapper m-0 mt-4">
+    <div class="row w-100 justify-content-center">
+        <div class="col-sm-2 col-6 footer-options">
+            <a class="d-block">home</a>
+            <a class="d-block">jewellery</a>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <a class="d-block">contact US</a>
+            <a class="d-block">Privacy policy</a>
+        </div>
+        <div class="col-sm-2 col-12 footer-options">
+            <p class="d-block">Location</p>
+            <p class="d-block"></p>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <p class="d-block">Connect</p>
+            <span class="d-block"><img src="assets/facebook-grey.svg" alt="">/Ashish_vijay</span>
+            <span class="d-block"><img src="assets/insta-grey.svg" alt="">@Ashish_vijay</span>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <p>Stay in touch</p>
+            <span class="d-block">info@ara.com.br</span>
+            <img src="assets/AV-logo.svg" alt="" class="AV-logo">
+        </div>
+    </div>
+</div>
+
+
+<script></script>
+</body>
+</html>

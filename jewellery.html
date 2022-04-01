@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="jewellery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container bg-white header-wrapper">
+    <div class="row pt-4 web-header">
+        <img src="assets/Tiara_logo_black.png" alt="" class="tiara-logo-img w-auto">
+        <div class="header-menu pt-4">
+            <a class="header-menu-name" href="homepage.html">Home</a>
+            <a class="header-menu-name active-tab">Jewellery</a>
+            <div class="media-dropdown">
+                <a class="dropbtn header-menu-name d-flex align-items-center justify-content-center" href="media.html">media 
+                  <img src="assets/down-arrow.svg" alt="" class="dropdown-arrow">
+                </a>
+                <div class="media-dropdown-content">
+                  <a href="#" class="pb-3">news</a>
+                  <a href="#">press release</a>
+                </div>
+            </div>
+            <a class="header-menu-name" href="about.html">about</a>
+            <a class="header-menu-name" href="contact.html">contact us</a>
+        </div>
+    </div>
+    <img src="assets/Tiara_logo_black.png" alt="" class="tiara-logo-img-mob w-auto">
+    <nav role='navigation' class="side-navigation">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span></span>
+			<ul id="menu">
+                <img src="assets/Tiara_logo_black.png" alt="" class="tiara-logo-img w-auto">
+                <hr class="divider">
+				<a href="#">
+					<li class="header-menu-name">Home</li>
+				</a>
+				<a href="#">
+					<li class="header-menu-name">Jewellery</li>
+				</a>
+				<a href="#" class="media-dropdown" onclick="myFunction()">
+					<li class="dropbtn header-menu-name">media
+                        <img src="assets/down-arrow.svg" alt="" class="dropdown-arrow">
+                    </li>
+                    <div id="media-dropdown-id" class="media-dropdown-content">
+                        <button type="button" class="close dropdown-close-btn">&times;</button>
+                        <a href="#" class="pb-3 media-dropdown-option media-dropdown">news</a>
+                        <a href="#" class="media-dropdown-option media-dropdown">press release</a>
+                    </div>
+				</a>
+				<a href="#">
+					<li class="header-menu-name">Contacts</li>
+				</a>
+                <a href="#">
+					<li class="header-menu-name">About</li>
+				</a>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+  
+<div class="pt-4 pb-4">
+    <div class="position-relative">
+        <img src="assets/jewellery.png" alt="" class="w-100 about-banner-img position-relative">
+        <img src="assets/about-back-shape.svg" alt="" class="w-100 about-banner-overlay about-banner-overlay-img position-absolute">
+        <div class="about-banner position-absolute">
+            <span alt="" class="home-heading">Home /</span>
+            <span class="about-heading">Jewelry</span>
+        </div>
+    </div>
+</div>   
+
+<div class="container">
+    <div class="row">
+        <h4 class="jewellery-subheading">Select from 12345 Jewelry Designs</h3>
+        <div class="d-flex">
+            <div class="col-sm-3 jewellery-option-block">
+                <div class="d-flex justify-content-between align-items-center pb-3"><span class="filter">Filter By</span><span class="clear-all">Clear All</span></div>
+                <li class="jewellery-option-outer">
+                    <div onclick="toggle(1);" class="jewellery-option">
+                        <span class="jewellery-option-name">Price</span>
+                        <span class="plus-btn">+</span>
+                    </div>
+                    <ul class="submenu">
+                        <label class="jewellery-suboption">earring
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">ring
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">bracelet
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">pendants
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                        <label class="jewellery-suboption">necklaces
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </ul>
+                </li>
+                <li class="jewellery-option-outer">
+                    <div onclick="toggle(2);" class="jewellery-option">
+                        <span  class="jewellery-option-name">COLLECTIONS</span>
+                        <span class="plus-btn">+</span>
+                    </div>
+                    <ul class="submenu">
+                        <label class="container jewellery-suboption">earring
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">ring
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">bracelet
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">pendants
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                        <label class="jewellery-suboption">necklaces
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </ul>
+                </li>
+                <li class="jewellery-option-outer">
+                    <div  href="#" onclick="toggle(3);" class="jewellery-option">
+                        <span class="jewellery-option-name">CATEGORY</span>
+                        <span class="plus-btn">+</span>
+                    </div>
+                    <ul class="submenu">
+                        <label class="jewellery-suboption">earring
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">ring
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">bracelet
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">pendants
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                        <label class="jewellery-suboption">necklaces
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </ul>
+                </li>
+                <li class="jewellery-option-outer">
+                    <div onclick="toggle(4);" class="jewellery-option">
+                        <span  class="jewellery-option-name">GEMSTONES</span>
+                        <span class="plus-btn">+</span>
+                    </div>
+                    <ul class="submenu">
+                        <label class="jewellery-suboption">earring
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">ring
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">bracelet
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">pendants
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                        <label class="jewellery-suboption">necklaces
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </ul>
+                </li>
+                <li class="jewellery-option-outer">
+                    <div onclick="toggle(5);" class="jewellery-option">
+                        <span  class="jewellery-option-name">METAL</span>
+                        <span class="plus-btn">+</span>
+                    </div>
+                    <ul class="submenu">
+                        <label class="jewellery-suboption">earring
+                            <input type="checkbox" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">ring
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">bracelet
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="jewellery-suboption">pendants
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                        <label class="jewellery-suboption">necklaces
+                            <input type="checkbox" name="radio">
+                            <span class="checkmark"></span>
+                        </label> 
+                    </ul>
+                </li>
+            </div>
+            <div class="col-sm-9 jewellery-option-details">
+                <div class="row">
+                    <a class="each-jewellery-option" href="jewellery-details.html">
+                        <img src="assets/jewel1.jpg" alt="" class="w-100">
+                        <p class="jewellery-name">The Vivid Charm Bracelet</p>
+                        <p class="jewellery-category">Bracelet</p>
+                    </a>
+                    <div class="each-jewellery-option">
+                        <img src="assets/jewel2.jpg" alt="" class="w-100">
+                        <p class="jewellery-name">White Diamonds BRT</p>
+                        <p class="jewellery-category">Earings</p>
+                    </div>
+                    <div class="each-jewellery-option">
+                        <img src="assets/jewel3.jpg" alt="" class="w-100">
+                        <p class="jewellery-name">The Vivid Charm Bracelet</p>
+                        <p class="jewellery-category">Bracelet</p>
+                    </div>
+                    <div class="each-jewellery-option">
+                        <img src="assets/featured-jewellery2.png" alt="" class="w-100">
+                        <p class="jewellery-name">The Vivid Charm Bracelet</p>
+                        <p class="jewellery-category">Bracelet</p>
+                    </div>
+                    <div class="each-jewellery-option">
+                        <img src="assets/jewel5.jpg" alt="" class="w-100">
+                        <p class="jewellery-name">The Vivid Charm Bracelet</p>
+                        <p class="jewellery-category">Bracelet</p>
+                    </div>
+                    <div class="each-jewellery-option">
+                        <img src="assets/jewel2.jpg" alt="" class="w-100">
+                        <p class="jewellery-name">White Diamonds BRT</p>
+                        <p class="jewellery-category">Earings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr class="divider">
+
+<div class="pt-4 pb-4">
+    <div class="row m-0 text-center">
+        <h4 class="insta-name">@Ashish_vijay</h4>
+        <h5 class="instagram-text">Instagram</h5>
+        <div class=" insta-jewel-images p-0 mt-4">
+            <img src="assets/insta-jewel1.png" alt="">
+            <img src="assets/insta-jewel2.png" alt="">
+            <img src="assets/insta-jewel3.png" alt="">
+            <img src="assets/insta-jewel4.png" alt="">
+            <img src="assets/insta-jewel5.png" alt="">
+        </div>
+    </div> 
+</div>
+
+<div class="container p-4">
+    <div class="row pt-4 text-center justify-content-center">
+        <h3 class="follow-heading">Follow Along</h3>
+        <p class="follow-along-subtext">Stay updated on the latest news and updates from Tiara by Ashish Vijay. 
+            Enter your email ID in the box below to subscribe to our newsletters!</p>
+        <form action="/action_page.php">
+            <input type="email" id="email" name="email" placeholder="Email" class="email-input mb-4">
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <div class="social-media-links mt-4">
+            <img src="assets/facebook-icon.svg" alt="">
+            <img src="assets/pinterest.svg" alt="">
+            <img src="assets/insta-icon.svg" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="footer-wrapper m-0 mt-4">
+    <div class="row w-100 justify-content-center">
+        <div class="col-sm-2 col-6 footer-options">
+            <a class="d-block">home</a>
+            <a class="d-block">jewellery</a>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <a class="d-block">contact US</a>
+            <a class="d-block">Privacy policy</a>
+        </div>
+        <div class="col-sm-2 col-12 footer-options">
+            <p class="d-block">Location</p>
+            <p class="d-block"></p>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <p class="d-block">Connect</p>
+            <span class="d-block"><img src="assets/facebook-grey.svg" alt="">/Ashish_vijay</span>
+            <span class="d-block"><img src="assets/insta-grey.svg" alt="">@Ashish_vijay</span>
+        </div>
+        <div class="col-sm-2 col-6 footer-options">
+            <p>Stay in touch</p>
+            <span class="d-block">info@ara.com.br</span>
+            <img src="assets/AV-logo.svg" alt="" class="AV-logo">
+        </div>
+    </div>
+</div>
+
+<div class="jewellery-fixed-footer">
+    <button id="filter-by-mobile" class="" onclick="openNav()">Filter By
+        <img src="assets/Filter.svg" alt="">
+    </button>
+</div>
+<div id="myNav" class="overlay jewellery-option-block-mob">
+    <div class="d-flex justify-content-between align-items-center p-3 border-bottom"><span class="filter">Filter By</span><span class="clear-all">Clear All</span></div>
+    <div class="overlay-content">
+        <div class="overlay-content-option">
+            <li class="jewellery-option-outer">
+                <div href="#submenu-mob1" class="jewellery-option active-jewellery-option">
+                    <span class="jewellery-option-name">Price</span>
+                </div>
+            </li>
+            <li class="jewellery-option-outer">
+                <div href="#submenu-mob2" class="jewellery-option">
+                    <span  class="jewellery-option-name">COLLECTIONS</span>
+                </div>
+                <ul class="submenu">
+                    <label class="container jewellery-suboption">earring
+                        <input type="checkbox" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">ring
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">bracelet
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">pendants
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label> 
+                    <label class="jewellery-suboption">necklaces
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label> 
+                </ul>
+            </li>
+            <li class="jewellery-option-outer">
+                <div href="#submenu-mob3" class="jewellery-option">
+                    <span class="jewellery-option-name">CATEGORY</span>
+                </div>
+                <ul class="submenu">
+                    <label class="jewellery-suboption">earring
+                        <input type="checkbox" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">ring
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">bracelet
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="jewellery-suboption">pendants
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label> 
+                    <label class="jewellery-suboption">necklaces
+                        <input type="checkbox" name="radio">
+                        <span class="checkmark"></span>
+                    </label> 
+                </ul>
+            </li>
+            <li class="jewellery-option-outer">
+                <div href="#submenu-mob4" class="jewellery-option">
+                    <span  class="jewellery-option-name">GEMSTONES</span>
+                </div>
+            </li>
+            <li class="jewellery-option-outer">
+                <div href="#submenu-mob5" class="jewellery-option">
+                    <span  class="jewellery-option-name">METAL</span>
+                </div>
+            </li>
+        </div>
+        <div class="jewellery-radio-option">
+            <ul id="submenu-mob1" class="submenu-mob">
+                <label class="jewellery-suboption">earring
+                    <input type="checkbox" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">ring
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">bracelet
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">pendants
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+                <label class="jewellery-suboption">necklaces
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+            </ul>
+            <ul id="submenu-mob2" class="submenu-mob">
+                <label class="container jewellery-suboption">earring
+                    <input type="checkbox" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">ring
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">bracelet
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">pendants
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+                <label class="jewellery-suboption">necklaces
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+            </ul>
+            <ul id="submenu-mob3" class="submenu-mob">
+                <label class="jewellery-suboption">earring
+                    <input type="checkbox" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">ring
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">bracelet
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">pendants
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+                <label class="jewellery-suboption">necklaces
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+            </ul>
+            <ul id="submenu-mob4" class="submenu-mob">
+                <label class="container jewellery-suboption">earring
+                    <input type="checkbox" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">ring
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">bracelet
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="jewellery-suboption">pendants
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+                <label class="jewellery-suboption">necklaces
+                    <input type="checkbox" name="radio">
+                    <span class="checkmark"></span>
+                </label> 
+            </ul>
+        </div>
+        <div class="overlay-footer">
+            <button class="close" href="javascript:void(0)" onclick="closeNav()">CLOSE</button>
+            <button class="apply" href="javascript:void(0)" onclick="closeNav()">APPLY</button>
+        </div>
+    </div>
+</div>
+
+
+<script>
+ 
+ function toggle(n) {
+    var menus = document.getElementsByClassName("submenu");
+    for(var i=0;i<menus.length;i++){
+        if((i == (n-1)) && (menus[i].style.display != "block")){
+            menus[i].style.display = "block";
+        }else{
+            menus[i].style.display = "none";
+        }
+    } 
+};
+
+$(document).on("click", "[href^='#']", function() { 
+    var href = $(this).attr("href") 
+    $(href).show("fast").siblings().hide("fast") 
+    return false
+});
+
+$(document).ready(function() {
+    $(".jewellery-option").click(function () {
+        $(".jewellery-option").removeClass("active-jewellery-option");
+        // $(".tab").addClass("active"); // instead of this do the below 
+        $(this).addClass("active-jewellery-option");   
+    });
+});
+
+
+function myFunction() {
+  var x = document.getElementById("media-dropdown-id");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+$(document).click((event) => {
+  if (!$(event.target).closest("#media-dropdown-id").length) {
+    // the click occured outside '#element'
+  }        
+});
+
+
+
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+
+</script>
+</body>
+</html>

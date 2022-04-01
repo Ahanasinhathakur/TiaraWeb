@@ -1,0 +1,590 @@
+.header-wrapper {
+    padding: 24px;
+    text-align: center;
+}
+.tiara-logo-img {
+    height: 50px;
+    margin: 0 auto;
+}
+.header-menu-name {
+    margin-right: 4vw;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.media-dropdown-content {
+    padding: 25px 20px;
+}
+.media-dropdown-content a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+}
+.header-menu a:last-child {
+    margin-right: 0;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active-tab::after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.media-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}  
+.media-dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.media-dropdown:hover .media-dropdown-content {
+    display: block;
+}
+.media-dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+.header-menu-name .dropdown-arrow {
+    margin-left: 10px;
+}
+
+
+.enquire-btn, .appointment-btn {
+    display: block;
+    text-transform: uppercase;
+    padding: 15px;
+    width: 50%;
+    font-family: 'Questrial';
+    font-size: 16px;
+}
+.enquire-btn {
+    margin-bottom: 12px;
+    border: 1px solid #000;
+    background: #fff;
+    margin-top: 2.5rem;
+   
+}
+.appointment-btn {
+    border: none;
+    background: #000;
+    color: #fff;
+}
+.col-sm-6 .product-category {
+    font-size: 13px;
+    color: #999;
+    font-family: 'Questrial';
+}
+.product-name {
+    font-size: 28px;
+    text-transform: capitalize;
+    font-family: Playfair Display;
+    margin-bottom: 20px;
+}
+.product-price {
+    font-size: 30px;
+    font-family: 'Questrial';
+}
+.page-subcategory span {
+    font-size: 13px;
+    font-family: Playfair Display;
+}
+.page-subcategory .product-category {
+    color: #999;
+}
+.row .product-img-block {
+    display: flex;
+    padding-right: 2.6rem;
+}
+.subproduct-img-block {
+    width: 18%;
+    margin-right: 4%;
+}
+.subproduct-img-block img {
+    width: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+.main-product-img {
+    /* width: 78%; */
+    width: 100%;
+    object-fit: cover;
+    height: 458px;
+}
+.main-product-img-sec {
+    height: 440px;
+    object-fit: cover;
+    padding-left: 2.5rem;
+}
+.product-details {
+    color: #999;
+    font-family: 'Questrial';
+    font-size: 16px;
+}
+
+
+.follow-heading, .send-query-heading, .location-heading, .related-jewel-heading {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: Playfair Display;
+    margin-bottom: 20px;
+}
+.row .related-jewel-heading {
+    margin-bottom: 40px;
+    margin-top: 4rem;
+    padding: 0;
+}
+.follow-along-subtext {
+    line-height: 1.75;
+    font-size: 16px;
+    font-family: Questrial;
+    color: #999;
+}
+
+
+
+.instagram-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #999;
+    text-transform: uppercase;
+}
+.insta-name {
+    font-family: Playfair Display;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.insta-jewel-images img {
+    height: 250px;
+    margin-right: 20px;
+}
+.insta-jewel-images {
+    display: flex;
+    overflow-x: scroll;
+}
+.insta-jewel-images::-webkit-scrollbar {
+    display: none;
+}
+
+
+.row .follow-along-subtext {
+    width: 70%;
+}
+.email-input, .name-input-query, .email-input-query, .message-input-query {
+    padding: 15px;
+    border: 1px solid #999;
+    font-family: Questrial;
+}
+.email-input {
+    width: 52%;
+}
+.subscribe-btn {
+    width: 52%;
+    padding: 20px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.social-media-links img {
+    width: 60px;
+    margin-right: 20px;
+}
+.social-media-links img:last-child {
+    margin-right: 0;
+}
+
+
+.footer-wrapper {
+    background: #E3E3E3;
+    padding: 35px 0;
+}
+.footer-wrapper a, .footer-wrapper p {
+    font-family: Questrial;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.footer-wrapper span {
+    color: #999;
+    text-align: left;
+}
+.footer-options span {
+    margin-bottom: 8px;
+}
+.footer-options span img {
+    margin-right: 10px;
+    height: 18px;
+}
+.AV-logo {
+    height: 35px;
+}
+
+.web-header {
+    display: unset;
+}
+.tiara-logo-img-mob, .header-wrapper .side-navigation {
+    display: none;
+}
+
+
+#menuToggle {
+   display: block;
+   /* position: absolute; */
+   top: 15px;
+   right: 50px;
+   z-index: 1;  
+   -webkit-user-select: none;
+   user-select: none;
+} 
+#menuToggle a {
+   text-decoration: none;
+   color: #232323;   
+   transition: color 0.3s ease;
+}
+#menuToggle a:hover {
+   color: tomato;
+} 
+#menuToggle input {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   cursor: pointer;
+   opacity: 0;
+   z-index: 2; 
+   -webkit-touch-callout: none;
+}
+#menuToggle span {
+   display: block;
+   width: 24px;
+   height: 2px;
+   margin-bottom: 5px;
+   position: relative; 
+   background: #000;
+   border-radius: 3px;   
+   z-index: 1;   
+   transform-origin: 4px 0px;   
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+   transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+   transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+   opacity: 1;
+   transform: rotate(45deg) translate(-2px, -1px);
+   background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+   opacity: 0;
+   transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+   transform: rotate(-45deg) translate(0, -1px);
+}
+#menu {
+   position: absolute;
+   width: 300px;
+   margin: -100px 0 0 -50px;
+   padding: 50px;
+   padding-top: 125px;
+   background: #ededed;
+   list-style-type: none;
+   -webkit-font-smoothing: antialiased;
+   transform-origin: 0% 0%;
+   transform: translate(-600px, 0); 
+   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li {
+   padding: 10px 0;
+   font-size: 22px;
+}
+#menuToggle input:checked ~ ul {
+   transform: none;
+}
+
+.divider {
+    width: calc(100% - 84px);
+    margin: 6rem auto 0;
+}
+
+.contact-email-label, .contact-num-label {
+    font-family: Questrial;
+    font-size: 16px;
+    color: #ACACAC;
+    margin-bottom: 0;
+}
+.contact-email, .contact-number {
+    font-family: Questrial;
+    font-size: 22px;
+}
+
+
+.col-sm-3.carousel-card {
+    width: 24%;
+    margin-right: 1%;
+    padding: 0;
+}
+.card-next-btn.carousel-control-next {
+    right: -30px;
+}
+.card-prev-btn.carousel-control-prev {
+    left: -30px;
+}
+.card-next-btn img, .card-prev-btn img {
+    height: 22px;
+}
+.card-prev-btn img {
+    transform: rotate(180deg);
+}
+.card.card-body {
+    border-radius: 0;
+}
+.card-body img {
+    height: 150px;
+    object-fit: cover;
+}
+.card-body .jewellery-name {
+    font-family: Questrial;
+    font-size: 15px;
+    letter-spacing: 0.25px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.card-body .jewellery-category {
+    font-family: Questrial;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #999999;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+.row .carousel-web {
+    display: block;
+    padding: 0;
+}
+.row .carousel-mob {
+    display: none;
+    padding: 0;
+}
+.jewellery-name {
+    font-family: Questrial;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.jewellery-category {
+    font-family: Questrial;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #999;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.each-jewellery-option img {
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .tiara-logo-img-mob, .header-wrapper .side-navigation {
+        display: block;
+    }
+
+    .container.header-wrapper {
+        padding: 1.5rem 14px;
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: -1px 1px 11px 1px #ccccccad;
+        position: fixed;
+        z-index: 99;
+    }
+    .row.web-header {
+        display: none;
+    }
+    .about-banner-img, .about-banner-overlay{
+        height: 110px;
+        margin-top: calc(83px - 1.5rem);
+    }
+    .tiara-logo-img-mob {
+        height: 35px;
+    }
+
+    .divider-mob {
+        width: calc(100% - 1.5rem);
+        margin: 0 auto;
+    }
+
+    /* follow along */
+    .row .follow-along-subtext {
+        width: 100%;
+    }
+    .email-input, .subscribe-btn {
+        width: 100%;
+        padding: 14px;
+    }
+    .social-media-links img {
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    /* footer */
+    .footer-wrapper {
+        padding: 30px 14px;
+    }
+    .footer-options {
+        margin-bottom: 10px;
+    }
+
+    .row .send-query-block {
+        padding-right: 12px;
+        margin-bottom: 32px;
+    }
+    .divider {
+        width: calc(100% - 1.5rem);
+        margin: 2rem auto 0;
+    }
+
+    .about-banner {
+        margin-top: 29px;
+        width: max-content;
+    }
+    .about-banner .home-heading {
+        font-size: 16px;
+    }
+    .about-banner .about-heading {
+        font-size: 30px;
+    }
+
+    .row .jewellery-subheading {
+        margin: 2.5rem 0 1rem;
+    }
+    .jewellery-option-block {
+        display: none;
+    }
+    .jewellery-option-details {
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .jewellery-option-details .row {
+        margin: 0 auto;
+    }
+    .row .each-jewellery-option {
+        width: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    .row .each-jewellery-option img {
+        height: 124px;
+    }
+
+
+    .row .page-subcategory {
+        margin-top: 7rem;
+    }
+    .main-product-img {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .main-product-img-sec {
+        height: 340px;
+        padding-left: 0;
+    }
+    .subproduct-img-block {
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+    .subproduct-img-block img {
+        width: 31%;
+    }
+    .row .product-img-block {
+        /* display: flex;
+        flex-wrap: wrap-reverse; */
+        padding-right: 12px;
+    }
+    .enquire-btn, .appointment-btn {
+        width: 100%;
+    }
+    .appointment-btn {
+        margin-bottom: 3rem;
+    }
+    .row .related-jewel-heading {
+        margin-bottom: 24px;
+        margin-top: 4rem;
+        font-size: 24px;
+    }
+
+    .row .carousel-web {
+        display: none;
+    }
+    .row .carousel-mob {
+        display: flex;
+        overflow-x: auto;
+    }
+    .container.carousel-container {
+        padding-right: 0;
+        margin-right: 0;
+    }
+}
+
+.col-sm-3.carousel-card {
+    display: inline-block;
+    margin-left:-4px;
+  }
+  .col-sm-3.carousel-card img{
+    width: 100%;
+    height: 200px;
+  }
+a.carousel-control-prev, a.carousel-control-next {
+    width: auto;
+    height: fit-content;
+    top: 48%;
+}
+a.carousel-control-prev-icon {
+    background-image: url("assets/prev-btn.svg");
+}
+     

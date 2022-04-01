@@ -1,0 +1,805 @@
+.header-wrapper {
+    padding: 24px;
+    text-align: center;
+}
+.tiara-logo-img {
+    height: 50px;
+    margin: 0 auto;
+}
+.header-menu-name {
+    margin-right: 4vw;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.media-dropdown-content {
+    padding: 25px 20px;
+}
+.media-dropdown-content a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+}
+.header-menu a:last-child {
+    margin-right: 0;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active-tab::after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.media-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}  
+.media-dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.media-dropdown:hover .media-dropdown-content {
+    display: block;
+}
+.media-dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+.header-menu-name .dropdown-arrow {
+    margin-left: 10px;
+}
+  
+
+.about-banner {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.about-banner .home-heading, .about-banner .about-heading {
+    font-family: Playfair Display;
+    color: #fff;
+}
+.about-banner .home-heading {
+    font-size: 20px;
+}
+.about-banner .about-heading {
+    font-size: 50px;
+}
+.about-banner-img {
+    height: 255px;
+    object-fit: cover;
+}
+.about-banner-overlay-img {
+    opacity: 0.4;
+    left: 0;
+    height: 255px;
+}
+.about-banner-overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.1);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.row .news-block {
+    padding: 25px;
+    border: 1px solid #E3E3E3;
+    width: 32.5%;
+    margin-bottom: 2.5%;
+}
+.news-block img {
+    margin-bottom: 15px;
+}
+.news-block .news-description {
+    font-family: Questrial;
+    font-size: 18px;
+    white-space: nowrap;
+}
+.news-date {
+    font-family: Questrial;
+    font-size: 16px;
+    color: #999999;
+}
+.find-more-btn {
+    font-family: Questrial;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 18px 0;
+    width: 100%;
+}
+.news-block-wrapper {
+    border-bottom: 2px solid #ddd;
+}
+
+.row .send-query-block {
+    padding-right: 50px;
+}
+.location-name {
+    margin: 25px 0 5px;
+    font-family: Questrial;
+    font-size: 19px;
+}
+.location-details {
+    font-family: Questrial;
+    font-size: 16px;
+}
+.follow-heading, .send-query-heading, .location-heading {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: Playfair Display;
+    margin-bottom: 20px;
+}
+.follow-along-subtext {
+    line-height: 1.75;
+    font-size: 16px;
+    font-family: Questrial;
+    color: #999;
+}
+
+
+
+.instagram-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #999;
+    text-transform: uppercase;
+}
+.insta-name {
+    font-family: Playfair Display;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.insta-jewel-images img {
+    height: 250px;
+    margin-right: 20px;
+}
+.insta-jewel-images {
+    display: flex;
+    overflow-x: scroll;
+}
+.insta-jewel-images::-webkit-scrollbar {
+    display: none;
+}
+
+
+.row .follow-along-subtext {
+    width: 70%;
+}
+.email-input, .name-input-query, .email-input-query, .message-input-query {
+    padding: 15px;
+    border: 1px solid #999;
+}
+.email-input {
+    width: 52%;
+}
+.subscribe-btn {
+    width: 52%;
+    padding: 20px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.social-media-links img {
+    width: 60px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.social-media-links img:last-child {
+    margin-right: 0;
+}
+
+
+.footer-wrapper {
+    background: #E3E3E3;
+    padding: 35px 0;
+}
+.footer-wrapper a, .footer-wrapper p {
+    font-family: Questrial;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.footer-wrapper span {
+    color: #999;
+    text-align: left;
+}
+.footer-options span {
+    margin-bottom: 8px;
+}
+.footer-options span img {
+    margin-right: 10px;
+    height: 18px;
+}
+.AV-logo {
+    height: 35px;
+}
+
+.web-header {
+    display: unset;
+}
+.tiara-logo-img-mob, .header-wrapper .side-navigation {
+    display: none;
+}
+
+
+
+.divider {
+    width: calc(100% - 84px);
+    margin: 6rem auto 0;
+}
+
+.contact-email-label, .contact-num-label {
+    font-family: Questrial;
+    font-size: 16px;
+    color: #ACACAC;
+    margin-bottom: 0;
+}
+.contact-email, .contact-number {
+    font-family: Questrial;
+    font-size: 22px;
+}
+
+
+.submenu {
+	display: none;
+    background: #f5f5f5;
+    padding: 10px 15px;
+}
+
+.jewellery-suboption {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default radio button */
+.jewellery-suboption input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border: 1px solid #000;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+  /* When the radio button is checked, add a blue background */
+.jewellery-suboption input:checked ~ .checkmark {
+    background-color: #fff;
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.jewellery-suboption input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.jewellery-suboption .checkmark:after {
+    width: 12px;
+    height: 12px;
+    background: #000;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+.jewellery-subheading {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display';
+    margin: 1rem 0 4rem;
+}
+.filter {
+    font-family: Playfair Display;
+    font-size: 18px;
+    letter-spacing: 0.84px;
+}
+.clear-all {
+    font-family: Questrial;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #83807B;
+    text-transform: uppercase;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.jewellery-option-block {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+    display: block;
+}  
+.jewellery-option-outer {
+    margin-bottom: 15px;
+}
+.jewellery-option {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+.jewellery-option-name {
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Questrial';
+    text-decoration: none;
+    padding: 0 0 15px;
+}
+.jewellery-option-outer .plus-btn {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.row .jewellery-suboption {
+    font-size: 15px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px 0 30px;
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.jewellery-suboption:last-child {
+    border-bottom: none;
+}
+.jewellery-name {
+    font-family: Questrial;
+    font-size: 16px;
+    letter-spacing: 0.25px;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.jewellery-category {
+    font-family: Questrial;
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    color: #999999;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.jewellery-option-details {
+    padding-left: 4%;
+    margin-top: 4rem;
+}
+.row .each-jewellery-option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 31.5%;
+    margin-bottom: 2%;
+    margin-right: 1.3%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.each-jewellery-option img {
+    height: 150px;
+    object-fit: cover;
+}
+.row .each-jewellery-option:hover {
+    box-shadow: 1px 1px 5px #73737394;
+    width: 33%;
+}
+
+.jewellery-fixed-footer {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .tiara-logo-img-mob, .header-wrapper .side-navigation {
+        display: block;
+    }
+
+    .container.header-wrapper {
+        padding: 1.5rem 14px;
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: -1px 1px 11px 1px #ccccccad;
+        position: fixed;
+        z-index: 99;
+    }
+    .row.web-header {
+        display: none;
+    }
+    .about-banner-img, .about-banner-overlay{
+        height: 110px;
+        margin-top: calc(83px - 1.5rem);
+    }
+    .tiara-logo-img-mob {
+        height: 35px;
+    }
+
+    .divider-mob {
+        width: calc(100% - 1.5rem);
+        margin: 0 auto;
+    }
+
+    /* follow along */
+    .row .follow-along-subtext {
+        width: 100%;
+    }
+    .email-input, .subscribe-btn {
+        width: 100%;
+        padding: 14px;
+    }
+    .social-media-links img {
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    /* footer */
+    .footer-wrapper {
+        padding: 30px 14px;
+    }
+    .footer-options {
+        margin-bottom: 10px;
+    }
+
+    .row .send-query-block {
+        padding-right: 12px;
+        margin-bottom: 32px;
+    }
+    .divider {
+        width: calc(100% - 1.5rem);
+        margin: 2rem auto 0;
+    }
+
+    .about-banner {
+        margin-top: 29px;
+        width: max-content;
+    }
+    .about-banner .home-heading {
+        font-size: 16px;
+    }
+    .about-banner .about-heading {
+        font-size: 30px;
+    }
+
+    .row .jewellery-subheading {
+        margin: 2.5rem 0 1rem;
+    }
+    .jewellery-option-block {
+        display: none;
+    }
+    .jewellery-option-details {
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .jewellery-option-details .row {
+        margin: 0 auto;
+    }
+    .jewellery-option-details .row {
+        justify-content: space-between;
+    }
+    .row .each-jewellery-option {
+        width: 49%;
+        margin-right: 0;
+    }
+
+    .jewellery-fixed-footer {
+        position: fixed;
+        display: flex;
+        bottom: 0;
+        background: #fff;
+        width: 100%;
+        box-shadow: -3px -2px 10px #a0a0a07a;
+    }
+    .jewellery-fixed-footer button {
+        padding: 20px;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        font-family: Questrial;
+        font-size: 16px;
+        text-align: center;
+    }
+    /* .jewellery-fixed-footer button:first-child {
+        border-right: 2px solid #ddd;
+    } */
+}
+
+/* Hamburger Menu */
+body {
+	margin: 0;
+	padding: 0;
+	background: #efefef;
+	color: #333333;
+	font-family: "Roboto", sans-serif;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none !important;
+	color: #232323;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #2ecc71;
+}
+
+#menuToggle {
+	display: block;
+	position: absolute;
+	top: 34px;
+	right: 22px;
+	z-index: 1;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+#menuToggle input {
+	display: block;
+	width: 40px;
+	height: 32px;
+	position: absolute;
+	top: -7px;
+	left: -5px;
+	cursor: pointer;
+	opacity: 0;
+	z-index: 2;
+	-webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative; 
+    background: #000;
+    border-radius: 3px;   
+    z-index: 1;   
+    transform-origin: 4px 0px;   
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+	transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+	transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+	background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+	opacity: 0;
+	transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+	opacity: 1;
+	transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+	position: absolute;
+	width: calc(100vw + 40px);
+    height: calc(100vh + 100px);
+	margin: -100px 0 0 0;
+	padding: 18px;
+	padding-top: 80px;
+	right: -100px;
+	list-style-type: none;
+	-webkit-font-smoothing: antialiased;
+	transform-origin: 0% 0%;
+	transform: translate(100%, 0);
+	transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    box-shadow: -20px 0px 20px 20px #00000063;
+    background-color: #fff;
+}
+#menu a {
+    display: table;
+    width: 100%;
+}
+#menu li {
+	padding: 15px 0 15px 25px;
+	font-size: 22px;
+    color: #000;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+#menu li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#menuToggle input:checked~ul {
+	transform: scale(1.0, 1.0);
+	opacity: 1;
+}
+#menu .tiara-logo-img {
+    height: 36px;
+}
+.side-navigation .divider {
+    width: calc(100vw - 70px);
+    float: left;
+    margin: 2rem 0;
+}
+.dropdown-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 34px;
+    padding: 0;
+    height: 34px;
+    display: flex;
+    align-items: center;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    display: flex;
+    height: calc(100vh - 58px);
+  }
+  .overlay-content-option {
+      width: 33%;
+      background-color: #f5f5f5;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+@media screen and (max-height: 767px) {
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .jewellery-option-block-mob {
+        list-style-type: none;
+    }
+    .jewellery-option-name {
+        font-size: 12px;
+        padding-left: 15px;
+    }
+    .jewellery-option {
+        padding: 15px 0;
+    }
+    .jewellery-option-outer {
+        margin-bottom: 0;
+    }
+    .jewellery-radio-option {
+        width: 67%;
+    }
+    .container.jewellery-suboption, .jewellery-suboption {
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 0;
+        padding: 15px 0 15px 35px;
+    }
+    .overlay-footer {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        box-shadow: -3px -2px 10px #a0a0a07a;
+    }
+    .overlay-footer .close, .overlay-footer .apply {
+        font-size: 13px;
+        width: 50%;
+        border: none;
+        padding: 15px;
+    }
+    .overlay-footer .close {
+        background-color: #fff;
+    }
+    .overlay-footer .apply {
+        background-color: #000;
+        color: #fff;
+    }
+    .submenu-mob {
+        display: none;
+    }
+    .active-jewellery-option {
+        background-color: #fff;
+    }
+    #submenu-mob1 {
+        display: block;
+    }
+}

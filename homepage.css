@@ -1,0 +1,610 @@
+.header-wrapper {
+    padding: 24px;
+    text-align: center;
+}
+.tiara-logo-img {
+    height: 50px;
+    margin: 0 auto;
+}
+.header-menu-name {
+    margin-right: 4vw;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+.media-dropdown-content {
+    padding: 25px 20px;
+}
+.media-dropdown-content a {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Playfair Display;
+}
+.header-menu a:last-child {
+    margin-right: 0;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active-tab::after {
+    content: "";
+    height: 2px;
+    width: auto;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.media-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+}  
+.media-dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+} 
+.media-dropdown:hover .media-dropdown-content {
+    display: block;
+}
+.media-dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+.header-menu-name .dropdown-arrow {
+    margin-left: 10px;
+}
+.header-wrapper, .how-it-works-wrapper {
+    border-bottom: 2px solid #ddd;
+}
+
+.diamond, .emeralds, .sapphires, .rubellites {
+    position: relative;
+}
+.diamond {
+    margin-bottom: 24px;
+    height: 386px;
+}
+.emeralds {
+    height: 213px;
+}
+.sapphires {
+    height: 183px;
+    margin-bottom: 24px;
+}
+.rubellites {
+    height: 414px;
+}
+.diamond img, .emeralds img, .sapphires img, .rubellites img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.diamond-text, .emeralds-text, .sapphires-text, .rubellites-text {
+    position: absolute;
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: Playfair Display;
+    width: 190px;
+    line-height: initial;
+}
+.diamond-text {
+    top: 42%;
+    left: 30px;
+    transform: translateY(-90%);
+}
+.emeralds-text {
+    left: 30px;
+    top: 15%;
+}
+.sapphires-text, .rubellites-text {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sapphires-text {
+    right: 0;
+} 
+.rubellites-text {
+    left: 40px;
+}
+
+
+.featured-jewel-heading {
+    text-align: left;
+    font-family: Playfair Display;
+    letter-spacing: 0.9px;
+    color: #000;
+    text-transform: uppercase;
+}
+.row>.parallel-lines {
+    width: calc(100% - 183px);
+    height: 6px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.featured-jewel-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+.featured-jewel-subtext {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 0;
+    align-items: center;
+}
+.featured-jewel-subtext span {
+    font-family: Questrial;
+    font-size: 19px;
+    color: #000;
+    text-transform: capitalize;
+}
+.featured-jewel-subtext img {
+    height: 15px;
+    width: auto;
+}
+.featured-jewel-catagory {
+    font-family: Questrial;
+    font-size: 14px;
+    color: #999999;
+    text-transform: uppercase;
+}
+
+
+.about-us-person-img {
+    height: 690px;
+    width: 100%;
+    object-fit: cover;
+}
+.row .about-us-section , .row .showroom-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.row .about-us-section {
+    padding-left: 30px;
+}
+.about-us-section h3,.how-it-works-head, .showroom-section h3, .follow-heading {
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: Playfair Display;
+    margin-bottom: 20px;
+}
+.about-us-subtext, .about-us-person-desig, .showroom-subtext, .follow-along-subtext {
+    font-family: Questrial;
+    color: #999;
+}
+.about-us-subtext , .showroom-subtext, .follow-along-subtext {
+    line-height: 1.75;
+    font-size: 16px;
+}
+.about-us-person-desig {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.about-us-tagline {
+    font-family: Playfair Display;
+    font-size: 22px;
+}
+.about-us-sign {
+    font-family: Sacramento;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.brand-logo-section {
+    margin: 0 3% 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo-section img {
+    width: 18%;
+}
+
+.home-video-play {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.engagement-text, .instagram-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #999;
+    text-transform: uppercase;
+}
+.chat-icon {
+    height: 80px;
+    width: auto;
+    margin-bottom: 25px;
+}
+.chat-heading {
+    font-family: Playfair Display;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.chat-subtext {
+    color: #999;
+    font-family: Montserrat;
+    font-size: 14.5px;
+}
+.row .free-consult-btn {
+    text-align: center;
+    font-family: Questrial;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    padding: 20px 35px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+
+.insta-name {
+    font-family: Playfair Display;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+.insta-jewel-images img {
+    height: 250px;
+    margin-right: 20px;
+}
+.insta-jewel-images {
+    display: flex;
+    overflow-x: scroll;
+}
+.insta-jewel-images::-webkit-scrollbar {
+    display: none;
+}
+
+
+.showroom-img {
+    height: 440px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.row .follow-along-subtext {
+    width: 70%;
+}
+.email-input {
+    padding: 15px;
+    width: 52%;
+    border: 1px solid #999;
+}
+.subscribe-btn {
+    width: 52%;
+    padding: 20px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.social-media-links img {
+    width: 60px;
+    margin-right: 20px;
+}
+.social-media-links img:last-child {
+    margin-right: 0;
+}
+
+
+.footer-wrapper {
+    background: #E3E3E3;
+    padding: 35px 0;
+}
+.footer-wrapper a, .footer-wrapper p {
+    font-family: Questrial;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 12px;
+    text-align: left;
+}
+.footer-wrapper span {
+    color: #999;
+    text-align: left;
+}
+.footer-options span {
+    margin-bottom: 8px;
+}
+.footer-options span img {
+    margin-right: 10px;
+    height: 18px;
+}
+.AV-logo {
+    height: 35px;
+}
+
+/* sidenav for mobile */
+#menuToggle {
+    display: block;
+    /* position: absolute; */
+    top: 15px;
+    right: 50px;
+    z-index: 1;  
+    -webkit-user-select: none;
+    user-select: none;
+ } 
+ #menuToggle a {
+    text-decoration: none;
+    color: #232323;   
+    transition: color 0.3s ease;
+ }
+ #menuToggle a:hover {
+    color: tomato;
+ } 
+ #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2; 
+    -webkit-touch-callout: none;
+ }
+ #menuToggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative; 
+    background: #000;
+    border-radius: 3px;   
+    z-index: 1;   
+    transform-origin: 4px 0px;   
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+ }
+ #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+ }
+ #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+ }
+ #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+ }
+ #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+ }
+ #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+ }
+ #menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-600px, 0); 
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+ }
+ #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+ }
+ #menuToggle input:checked ~ ul {
+    transform: none;
+ }
+
+
+.tiara-logo-img-mob, .side-navigation {
+    display: none;
+}
+
+
+.floating-chatbot {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display:none;
+    z-index: 2;
+}
+.btn.floating-chatbot:focus {
+    box-shadow: none;
+}
+.iframe-wrapper {
+    /* max-height: 595px;
+    min-height: 340px;
+    height: auto; */
+    height: 595px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* width: 374px; */
+    display: none;
+    z-index: 3;
+}
+.chatbot-iframe {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    height: calc(100% - 50px);
+    /* min-height: 340px;
+    height: auto;
+    width: 374px; */
+    display: block;
+    /* box-shadow: -3px 1px 5px #8484848c; */
+}
+.chatbot-close-btn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+}
+
+
+.sidenav {
+    display: none;
+}
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .tiara-logo-img-mob, .header-wrapper .side-navigation {
+        display: block;
+    }
+
+    .container.header-wrapper {
+        padding: 1.5rem 14px;
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: -1px 1px 11px 1px #ccccccad;
+        position: fixed;
+        z-index: 9;
+    }
+    .row.web-header {
+        display: none;
+    }
+    .about-banner-img, .about-banner-overlay{
+        height: 110px;
+        margin-top: calc(83px - 1.5rem);
+    }
+    .tiara-logo-img-mob {
+        height: 35px;
+    }
+
+    .brand-logo-section {
+        justify-content: left;
+        overflow-x: scroll;
+    }
+    .brand-logo-section img {
+        width: 48%;
+    }
+
+
+    .row.featured-jewel-row {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .row .featured-jewel {
+        width: 88%;
+    }
+    .row .free-consult-btn {
+        font-size: 3.5vw;
+        padding: 20px;
+    }
+
+     /* follow along */
+     .row .follow-along-subtext {
+        width: 100%;
+    }
+    .email-input, .subscribe-btn {
+        width: 100%;
+        padding: 14px;
+    }
+    .social-media-links img {
+        height: 50px;
+        margin-right: 5px;
+    }
+
+    /* footer */
+    .footer-wrapper {
+        padding: 30px 14px;
+    }
+    .footer-options {
+        margin-bottom: 10px;
+    }
+
+    
+
+    .iframe-wrapper, .chatbot-iframe {
+        bottom: 0;
+    }
+    .chatbot-close-btn {
+        top: calc(20vh - 43px);
+    }
+    .chatbot-iframe {
+        height: 80vh;
+    }
+    
+
+
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 11;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 18px;
+        z-index: 10;
+        right: 16px;
+        font-size: 30px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        font-size: 36px;
+    }
+}
+
+
+
